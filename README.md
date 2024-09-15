@@ -1,1 +1,1 @@
-[!Coffee Shop](assets/media/alkemistencafe.png)
+[Coffee Shop](assets/media/alkemistencafe.png)
