@@ -1,1 +1,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary:black;
+
+body{
+    background-color: $primary;
+}
+
+.btn{
+    background-color: $primary;
+}

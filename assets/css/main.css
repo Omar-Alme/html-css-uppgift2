@@ -11844,5 +11844,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: black;
+}
+
+.btn {
+  background-color: black;
+}
 
 /*# sourceMappingURL=main.css.map */
