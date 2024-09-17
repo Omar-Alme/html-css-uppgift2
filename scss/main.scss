@@ -6,32 +6,25 @@ body{
 }
  style {
 
+ }
+ <div class="top-header">
+ <a href="#" class="logo"></a>
+ <button>Button</button>
+ <div>
+
     nav {
         display: flex;
         justify-content: center;
         background-color: black;
         padding: 10px;
-    }
- }
-    ul {
+
         list-style-type: none;
         margin: 0;
-        padding: 0;
-        overflow: hidden;
+        padding: 0
+        overflow hidden;
         background-color: #333;
       }
 
-      li {
-        float: left;
-      }
-      
-      li {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-}
 
 .btn{
     background-color: $primary;
