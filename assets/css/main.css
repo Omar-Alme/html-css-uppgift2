@@ -11844,12 +11844,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-<<<<<<< HEAD
-  font-family: "Quesha", sans-serif;
-  font-style: normal;
-}
-
 section {
   padding: 60px 0;
 }
@@ -12098,24 +12092,6 @@ section {
   .background-section p {
     font-size: 0.9rem;
   }
-=======
-  background-color: #0d6efd;
-}
-
-::backdrop nav {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  padding: 10px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0 overflow hidden;
-  background-color: #333;
-}
-
-.btn {
-  background-color: #0d6efd;
->>>>>>> ea423096c643cb739828e377ae3685c52c13d87b
 }
 
 /*# sourceMappingURL=main.css.map */
