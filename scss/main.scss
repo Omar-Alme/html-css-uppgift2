@@ -105,7 +105,6 @@ section {
         text-align: left;
         padding-right: 30px;
 
-        // Initially hidden
         opacity: 0;
         transform: translateX(-50px); 
         animation: fadeInLeft 1.2s ease forwards; 
@@ -128,11 +127,11 @@ section {
             width: 100%;
             height: auto;
             object-fit: cover;
-            border-radius: 10px; 
+            border-radius: 10px;
 
             opacity: 0;
-            transform: translateX(50px); 
-            animation: fadeInRight 1.2s ease forwards; 
+            transform: translateX(50px);
+            animation: fadeInRight 1.2s ease forwards;
             animation-delay: 0.5s;
         }
     }
@@ -141,17 +140,17 @@ section {
         .text-content {
             text-align: center;
             padding-right: 0;
-            transform: translateX(0); 
-            animation: fadeInUp 1.2s ease forwards; 
+            transform: translateX(0);
+            animation: fadeInUp 1.2s ease forwards;
         }
 
         .image-content {
             margin-top: 20px;
 
             img {
-                transform: translateX(0); 
+                transform: translateX(0);
                 animation: fadeInUp 1.2s ease forwards;
-                animation-delay: 0.5s; 
+                animation-delay: 0.5s;
             }
         }
     }
