@@ -6,28 +6,28 @@ section {
     padding: 60px 0;
 }
 
+
 // Hero Section
 .hero-section {
     padding: 60px 0;
-    background-color: #fff; // Optional background color
+    background-color: #fff;
 
     // Animation for the text content
     .text-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%; // Full height of the row
+        height: 100%;
         text-align: left;
         padding-right: 30px; // Space between text and image
 
-        // Initially hidden
         opacity: 0;
-        transform: translateX(-50px); // Start position to the left
-        animation: fadeInLeft 1.2s ease forwards; // Apply fade and slide animation
+        transform: translateX(-50px); 
+        animation: fadeInLeft 1.2s ease forwards;
 
         h1 {
             font-size: 3rem;
-            color: #6b3e26; // Customize this color if necessary
+            color: #6b3e26;
             margin-bottom: 20px;
         }
 
@@ -44,11 +44,11 @@ section {
             width: 100%;
             height: auto;
             object-fit: cover;
-            border-radius: 10px; 
+            border-radius: 10px;
 
             opacity: 0;
-            transform: translateX(50px); 
-            animation: fadeInRight 1.2s ease forwards; 
+            transform: translateX(50px);
+            animation: fadeInRight 1.2s ease forwards;
             animation-delay: 0.5s;
         }
     }
@@ -58,17 +58,17 @@ section {
         .text-content {
             text-align: center;
             padding-right: 0;
-            transform: translateX(0); 
-            animation: fadeInUp 1.2s ease forwards; 
+            transform: translateX(0);
+            animation: fadeInUp 1.2s ease forwards;
         }
 
         .image-content {
             margin-top: 20px;
 
             img {
-                transform: translateX(0); 
+                transform: translateX(0);
                 animation: fadeInUp 1.2s ease forwards;
-                animation-delay: 0.5s; 
+                animation-delay: 0.5s;
             }
         }
     }
@@ -124,7 +124,7 @@ section {
     height: 600px;
 
     .overlay {
-        background-color: rgba(13, 12, 12, 0.3); // Optional overlay for better text readability
+        background-color: rgba(13, 12, 12, 0.3);
         height: 100%;
         display: flex;
         justify-content: center;
