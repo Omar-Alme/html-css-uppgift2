@@ -1,28 +1,312 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
-body{
-    background-color: $primary;
+// General section padding
+section {
+    padding: 60px 0;
 }
- style {
 
- }
- ::backdrop
+// Hero Section
+.hero-section {
+    padding: 60px 0;
+    background-color: #fff; // Optional background color
 
-    nav {
+    // Animation for the text content
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%; // Full height of the row
+        text-align: left;
+        padding-right: 30px; // Space between text and image
+
+        // Initially hidden
+        opacity: 0;
+        transform: translateX(-50px); // Start position to the left
+        animation: fadeInLeft 1.2s ease forwards; // Apply fade and slide animation
+
+        h1 {
+            font-size: 3rem;
+            color: #6b3e26; // Customize this color if necessary
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #7f5731;
+            line-height: 1.6;
+        }
+    }
+
+    // Animation for the image content
+    .image-content {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px; 
+
+            opacity: 0;
+            transform: translateX(50px); 
+            animation: fadeInRight 1.2s ease forwards; 
+            animation-delay: 0.5s;
+        }
+    }
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+        .text-content {
+            text-align: center;
+            padding-right: 0;
+            transform: translateX(0); 
+            animation: fadeInUp 1.2s ease forwards; 
+        }
+
+        .image-content {
+            margin-top: 20px;
+
+            img {
+                transform: translateX(0); 
+                animation: fadeInUp 1.2s ease forwards;
+                animation-delay: 0.5s; 
+            }
+        }
+    }
+
+    // Keyframes for the text animation (slide in from the left)
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    // Keyframes for the image animation (slide in from the right)
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    // Keyframes for smaller screens (slide up)
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+// Background Image Section
+.background-section {
+    position: relative;
+    background-image: url('../media/cheesecake.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+
+    .overlay {
+        background-color: rgba(13, 12, 12, 0.3); // Optional overlay for better text readability
+        height: 100%;
         display: flex;
         justify-content: center;
-        background-color: black;
+        align-items: center;
+        color: white;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+// Featured Coffees Section
+.featured-coffees {
+    padding: 50px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    .coffee-item {
+        margin-bottom: 30px;
+        text-align: center;
+
+        h3 {
+            margin-top: 15px;
+            font-size: 1.8rem;
+            color: #6b3e26;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// About Us Section
+.about-us {
+    background-color: #efe8dc;
+
+    .about-text {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .btn-secondary {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    }
+
+    .about-image img {
+        border-radius: 10px;
+    }
+}
+
+// Testimonials Section
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+
+    .testimonial-item {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #6b3e26;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #6b3e26;
+        border-radius: 50%;
         padding: 10px;
+    }
+}
 
-        list-style-type: none;
-        margin: 0;
-        padding: 0
-        overflow hidden;
-        background-color: #333;
-      }
+// For a smooth transition effect
+.carousel-item {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
 
 
-.btn{
-    background-color: $primary;
+// Call to Action Section
+.cta-section {
+    background-color: #6b3e26;
+    color: white;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .hero-section h1,
+    .background-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .background-section p {
+        font-size: 1rem;
+    }
+
+    .featured-coffees h2,
+    .about-us .about-text h2,
+    .testimonials h2,
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 20px 0;
+    }
+
+    .background-section {
+        height: 300px;
+    }
+
+    .hero-section h1,
+    .background-section h2 {
+        font-size: 2rem;
+    }
+
+    .background-section p {
+        font-size: 0.9rem;
+    }
 }

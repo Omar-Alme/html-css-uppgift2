@@ -11845,6 +11845,260 @@ textarea.form-control-lg {
   }
 }
 body {
+<<<<<<< HEAD
+  font-family: "Quesha", sans-serif;
+  font-style: normal;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.hero-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+.hero-section .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: left;
+  padding-right: 30px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1.2s ease forwards;
+}
+.hero-section .text-content h1, .hero-section .text-content .h1 {
+  font-size: 3rem;
+  color: #6b3e26;
+  margin-bottom: 20px;
+}
+.hero-section .text-content p {
+  font-size: 1.2rem;
+  color: #7f5731;
+  line-height: 1.6;
+}
+.hero-section .image-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+@media (max-width: 768px) {
+  .hero-section .text-content {
+    text-align: center;
+    padding-right: 0;
+    transform: translateX(0);
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  .hero-section .image-content {
+    margin-top: 20px;
+  }
+  .hero-section .image-content img {
+    transform: translateX(0);
+    animation: fadeInUp 1.2s ease forwards;
+    animation-delay: 0.5s;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.background-section {
+  position: relative;
+  background-image: url("../media/cheesecake.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+}
+.background-section .overlay {
+  background-color: rgba(13, 12, 12, 0.3);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.background-section h2, .background-section .h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.background-section p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.background-section .btn-secondary {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.featured-coffees {
+  padding: 50px 0;
+  text-align: center;
+}
+.featured-coffees h2, .featured-coffees .h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.featured-coffees p {
+  margin-bottom: 40px;
+}
+.featured-coffees .coffee-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.featured-coffees .coffee-item h3, .featured-coffees .coffee-item .h3 {
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: #6b3e26;
+}
+.featured-coffees .coffee-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+.featured-coffees .coffee-item img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us {
+  background-color: #efe8dc;
+}
+.about-us .about-text h2, .about-us .about-text .h2 {
+  font-size: 2.5rem;
+}
+.about-us .about-text p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.about-us .about-text .btn-secondary {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+.about-us .about-image img {
+  border-radius: 10px;
+}
+
+.testimonial-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+.testimonial-section .testimonial-item {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.testimonial-section .testimonial-item h3, .testimonial-section .testimonial-item .h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #6b3e26;
+}
+.testimonial-section .testimonial-item p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+.testimonial-section .carousel-control-prev-icon,
+.testimonial-section .carousel-control-next-icon {
+  background-color: #6b3e26;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-item {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.cta-section {
+  background-color: #6b3e26;
+  color: white;
+}
+.cta-section h2, .cta-section .h2 {
+  font-size: 2.5rem;
+}
+.cta-section p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.cta-section .btn-primary {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+  .hero-section h1, .hero-section .h1,
+  .background-section h2,
+  .background-section .h2 {
+    font-size: 2.5rem;
+  }
+  .background-section p {
+    font-size: 1rem;
+  }
+  .featured-coffees h2, .featured-coffees .h2,
+  .about-us .about-text h2,
+  .about-us .about-text .h2,
+  .testimonials h2,
+  .testimonials .h2,
+  .cta-section h2,
+  .cta-section .h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  section {
+    padding: 20px 0;
+  }
+  .background-section {
+    height: 300px;
+  }
+  .hero-section h1, .hero-section .h1,
+  .background-section h2,
+  .background-section .h2 {
+    font-size: 2rem;
+  }
+  .background-section p {
+    font-size: 0.9rem;
+  }
+=======
   background-color: #0d6efd;
 }
 
@@ -11861,6 +12115,7 @@ body {
 
 .btn {
   background-color: #0d6efd;
+>>>>>>> ea423096c643cb739828e377ae3685c52c13d87b
 }
 
 /*# sourceMappingURL=main.css.map */
