@@ -1,10 +1,27 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-$primary:black;
 
 body{
     background-color: $primary;
 }
+ style {
+
+ }
+ ::backdrop
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 10px;
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0
+        overflow hidden;
+        background-color: #333;
+      }
+
 
 .btn{
     background-color: $primary;
