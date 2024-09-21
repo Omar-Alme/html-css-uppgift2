@@ -12360,6 +12360,7 @@ section {
   margin: 0;
 }
 
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -12385,6 +12386,8 @@ body {
   background-color: #ffffff;
 }
 
+=======
+>>>>>>> 217532f47f9545772c075ffcef08d2dacda6bb5a
 .contact-form {
   width: 50%;
   padding: 40px;
