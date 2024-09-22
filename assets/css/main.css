@@ -12032,33 +12032,49 @@ section {
 
 .featured-coffees {
   padding: 50px 0;
-  text-align: center;
+  background-color: #fff;
+  /* Responsive adjustments */
 }
 .featured-coffees h2, .featured-coffees .h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #6b3e26;
 }
 .featured-coffees p {
   margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #7f5731;
 }
 .featured-coffees .coffee-item {
   margin-bottom: 30px;
-  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.featured-coffees .coffee-item h3, .featured-coffees .coffee-item .h3 {
-  margin-top: 15px;
-  font-size: 1.8rem;
-  color: #6b3e26;
-}
-.featured-coffees .coffee-item p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #333;
+.featured-coffees .coffee-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .featured-coffees .coffee-item img {
   border-radius: 10px;
-  max-width: 100%;
+  margin-bottom: 15px;
+  width: 100%;
   height: auto;
+}
+.featured-coffees .coffee-item h3, .featured-coffees .coffee-item .h3 {
+  font-size: 1.5rem;
+  color: #6b3e26;
+  margin-bottom: 10px;
+}
+.featured-coffees .coffee-item p {
+  font-size: 1rem;
+  color: #7f5731;
+}
+@media (max-width: 768px) {
+  .featured-coffees .coffee-item {
+    text-align: center;
+  }
 }
 
 .about-us {
@@ -12183,6 +12199,51 @@ section {
     font-size: 0.9rem;
   }
 }
+.about-us {
+  padding: 60px 0;
+  background-color: #f9f7f5;
+}
+.about-us .about-image img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 80%;
+  padding-right: 20px;
+}
+.about-us .about-text h2, .about-us .about-text .h2 {
+  font-size: 2.5rem;
+  color: #6b3e26;
+  margin-bottom: 20px;
+}
+.about-us .about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #7f5731;
+  margin-bottom: 30px;
+}
+.about-us .about-text .btn-coffee-theme {
+  background-color: #6b3e26;
+  color: #ffddc1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.about-us .about-text .btn-coffee-theme:hover {
+  background-color: #d4a373;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .about-us .about-image {
+    margin-bottom: 30px;
+  }
+  .about-us .about-text {
+    text-align: center;
+  }
+}
+
 .footer {
   background-color: #fff;
   padding: 50px 0;
@@ -12193,43 +12254,18 @@ section {
   margin-bottom: 10px;
 }
 .footer .footer-content a {
-  color: #6b3e26;
+  color: #57280f;
   font-size: 1.5rem;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
 .footer .footer-content a:hover {
-  color: #d4a373;
+  color: #96591c;
 }
 .footer p {
   color: #333;
   font-size: 0.9rem;
   margin: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  display: flex;
-  max-width: 1000px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #ffffff;
 }
 
 .contact-form {
@@ -12276,7 +12312,8 @@ address {
   margin-bottom: 5px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -12286,21 +12323,6 @@ address {
 textarea {
   resize: none;
   height: 100px;
-}
-
-button {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #333;
 }
 
 .image-section {
